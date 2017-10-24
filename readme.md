@@ -18,5 +18,6 @@ Uses: Java 8 and Spring boot
 	3. Quote.java: consuming rest api data
 	4. Postgres connection: (UserRepository.java, MainController.java, CustomUser.java)
 		curl 'localhost:8090/demo/add?name=First&email=someemail@someemailprovider.com'
-	5. Cache implementation(https://spring.io/guides/gs/caching/)[Book.java, BookRepository.java, SimpleBookRepository.java, AppRunner.java] 
+	5. Cache implementation(https://spring.io/guides/gs/caching/)[Book.java, BookRepository.java, SimpleBookRepository.java, AppRunner.java]
+	6. Messaging using websocket: (https://spring.io/guides/gs/messaging-stomp-websocket/)[GreetingSocket.java, GreetingSocketController.java, HelloMessage.java, WebSocketConfig.java, src/main/resources/static/] 
 	
