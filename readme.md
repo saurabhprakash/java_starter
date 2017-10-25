@@ -13,11 +13,11 @@ Uses: Java 8 and Spring boot
     - ./gradlew bootRun --stacktrace --debug
 
 ### Samples:
-	1. curl localhost:8090: Fetches a string response(HelloController.java)
+	1. curl localhost:8090/first: Fetches a string response(HelloController.java)
 	2. localhost:8090/greeting?name=test: Sample rest response(GreetingController.java)
 	3. Quote.java: consuming rest api data
 	4. Postgres connection: (UserRepository.java, MainController.java, CustomUser.java)
 		curl 'localhost:8090/demo/add?name=First&email=someemail@someemailprovider.com'
 	5. Cache implementation(https://spring.io/guides/gs/caching/)[Book.java, BookRepository.java, SimpleBookRepository.java, AppRunner.java]
-	6. Messaging using websocket: (https://spring.io/guides/gs/messaging-stomp-websocket/)[GreetingSocket.java, GreetingSocketController.java, HelloMessage.java, WebSocketConfig.java, src/main/resources/static/] 
+	6. Messaging using websocket: (https://spring.io/guides/gs/messaging-stomp-websocket/)[GreetingSocket.java, GreetingSocketController.java, HelloMessage.java, WebSocketConfig.java, src/main/resources/static/], test on url "http://localhost:8090/"
 	
