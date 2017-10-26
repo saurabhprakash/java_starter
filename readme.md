@@ -20,4 +20,5 @@ Uses: Java 8 and Spring boot
 		curl 'localhost:8090/demo/add?name=First&email=someemail@someemailprovider.com'
 	5. Cache implementation(https://spring.io/guides/gs/caching/)[Book.java, BookRepository.java, SimpleBookRepository.java, AppRunner.java]
 	6. Messaging using websocket: (https://spring.io/guides/gs/messaging-stomp-websocket/)[GreetingSocket.java, GreetingSocketController.java, HelloMessage.java, WebSocketConfig.java, src/main/resources/static/], test on url "http://localhost:8090/"
+	7. securing webapp test code:(in progress)
 	
