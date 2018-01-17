@@ -1,5 +1,7 @@
 Uses: Java 8 and Spring boot
 
+Main reference link: https://spring.io/guides
+
 ### STEPS
   	- brew update && brew install gradle
 	- To test the Gradle installation, run Gradle from the command-line:
