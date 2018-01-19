@@ -41,4 +41,10 @@ public class GreetingController{
         return new Greeting(counter.incrementAndGet(),
                 String.format(template, name));
     }
+
+    @GetMapping("/{ownerId}/pets/{petId}")
+    // test url: http://localhost:8090/greeting/123/pets/test-string
+    public String testPath(@PathVariable Long ownerId, @PathVariable String petId) {
+        return String.format("This is test ID: %s, 2nd ID: %s", ownerId, petId);
+    }
 }
