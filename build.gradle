@@ -24,6 +24,10 @@ repositories {
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
+configurations {
+    dev
+}
+
 dependencies {
     // tag::jetty[]
     compile("org.springframework.boot:spring-boot-starter-web") {
@@ -50,10 +54,17 @@ dependencies {
     compile("org.webjars:bootstrap:3.3.7")
     compile("org.webjars:jquery:3.1.0")
 
-    compile("org.springframework.boot:spring-boot-starter-security")
+    // compile("org.springframework.boot:spring-boot-starter-security")
 
     testCompile("junit:junit")
     testCompile("org.springframework.boot:spring-boot-starter-test")
     compile("org.springframework.boot:spring-boot-starter-actuator")
 
+    compile("org.springframework.boot:spring-boot-devtools")
+
+}
+
+bootRun {
+    // Use Spring Boot DevTool only when we run Gradle bootRun task
+    classpath = sourceSets.main.runtimeClasspath + configurations.dev
 }
