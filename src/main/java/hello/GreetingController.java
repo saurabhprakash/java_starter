@@ -12,6 +12,7 @@ import java.util.concurrent.atomic.AtomicLong;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
 
 @RestController
 @RequestMapping("/greeting")
@@ -29,6 +30,7 @@ public class GreetingController{
     }
 
     @PostMapping("")
+    @ResponseStatus(HttpStatus.CREATED)
     public Greeting greeting_post(@RequestParam(value="name", defaultValue="Post") String name) {
         return new Greeting(counter.incrementAndGet(),
                 String.format(template, name));
